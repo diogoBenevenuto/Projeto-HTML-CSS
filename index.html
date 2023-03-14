@@ -9,17 +9,24 @@
         <meta name="description" content="lista de jogos">
         <meta name="keywords" content="hmtl5, tecnologia">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="fontawesome-free-6.3.0-web/CSS/all.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilo.css">
+
+
     </head>
     <body>
         <header class="main-hr">
-            <a href="index.html" class="main-hr-link"> <img src="" alt=""></a>
-            <img src="imagens/avatar.jpg" alt="">
+            <a href="index.html" class="main-hr-link imagem-link" ><img src="imagens/avatar.jpg" alt=""></a>
+            
 
-            <h1> projeto feito em html e css <br>
+            <h1 class="main-hr-title"> Projeto feito em HTML e CSS <br>
                 <strong>Diogo Benevenuto da Silva Monteiro</strong><br>
                 Geme developer, Designer 3D, Desenvolvedor, <br>
-                dentre muitas outras funções
+                dentre muitas outras funções <a href="http://html5up.net" class="main-hr-link" >html5up.net</a>
             </h1>
         </header>
 
@@ -40,64 +47,87 @@
             <section class="main-content-section">
 
                 <h3> Recent Works </h3>
-
-                <article class="recent-works-cards">
-                    <a href="imagens/fulls/01.jpg"><img src="imagens/thumbs/01.jpg" title="descrição"></igm></a>
-                    <p class="rwd-title">Texto texto texto</p>
-                    <p>Textinho textinho textinho</p>
-
-                    <a href="imagens/fulls/02.jpg"><img src="imagens/thumbs/02.jpg" title="descrição"></igm></a>
-                    <p class="rwd-title">Texto texto texto</p>
-                    <p>Textinho textinho textinho</p>
-
-                    <a href="imagens/fulls/03.jpg"><img src="imagens/thumbs/03.jpg" title="descrição"></igm></a>
-                    <p class="rwd-title">Texto texto texto</p>
-                    <p>Textinho textinho textinho</p>
-
-                    <a href="imagens/fulls/04.jpg"><img src="imagens/thumbs/04.jpg" title="descrição"></igm></a>
-                    <p class="rwd-title">Texto texto texto</p>
-                    <p>Textinho textinho textinho</p>
-
-                    <a href="imagens/fulls/05.jpg"><img src="imagens/thumbs/05.jpg" title="descrição"></igm></a>
-                    <p class="rwd-title">Texto texto texto</p>
-                    <p>Textinho textinho textinho</p>
-
-                    <a href="imagens/fulls/06.jpg"><img src="imagens/thumbs/06.jpg" title="descrição"></igm></a>
-                    <p class="rwd-title">Texto texto texto</p>
-                    <p>Textinho textinho textinho</p>
-
+                <div class="row">
+                    <div class="col-2" >
+                        <article class="recent-works-cards">
+                            <a class="imagem-link" href="imagens/fulls/01.jpg"><img src="imagens/thumbs/01.jpg" title="descrição"></igm></a>
+                            <p class="rwd-title">Texto texto texto</p>
+                            <p>Textinho textinho textinho</p>
+                        </article>    
+                        <article class="recent-works-cards">
+                            <a class="imagem-link"  href="imagens/fulls/02.jpg"><img src="imagens/thumbs/02.jpg" title="descrição"></igm></a>
+                            <p class="rwd-title">Texto texto texto</p>
+                            <p>Textinho textinho textinho</p>
+                        </article>
+                        <article class="recent-works-cards">
+                            <a class="imagem-link"  href="imagens/fulls/03.jpg"><img src="imagens/thumbs/03.jpg" title="descrição"></igm></a>
+                            <p class="rwd-title">Texto texto texto</p>
+                            <p>Textinho textinho textinho</p>
+                        </article>
+                    </div>
+                    <div class="col-2" >
+                        <article class="recent-works-cards">
+                            <a class="imagem-link"  href="imagens/fulls/04.jpg"><img src="imagens/thumbs/04.jpg" title="descrição"></igm></a>
+                            <p class="rwd-title">Texto texto texto</p>
+                            <p>Textinho textinho textinho</p>
+                        </article>
+                        <article class="recent-works-cards">
+                            <a class="imagem-link"  href="imagens/fulls/05.jpg"><img src="imagens/thumbs/05.jpg" title="descrição"></igm></a>
+                            <p class="rwd-title">Texto texto texto</p>
+                            <p>Textinho textinho textinho</p>
+                        </article>
+                        <article class="recent-works-cards">
+                            <a class="imagem-link"  href="imagens/fulls/06.jpg"><img src="imagens/thumbs/06.jpg" title="descrição"></igm></a>
+                            <p class="rwd-title">Texto texto texto</p>
+                            <p>Textinho textinho textinho</p>
+                        </article>
+                    </div>
+                </div>
+                
                     <a href="https://github.com/diogoBenevenuto" title="Veja o portifolio completo" class="btn-default">Portifolio</a>
-                </article>
+
             </section>
 
             <section class="main-content-section">
                 <h3>Get In Touch</h3>
                 <p>texto texto texto texto texto texto texto texto texto</p>
 
-                <form action="#" method="POST">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
+                <div class="row">
+                    <div class="col-2-3">
+                        <form action="#" method="POST">
+                            <div class="row">
+                                <div class="col-2">
+                                    <label for="nome">Nome</label>
+                                    <input placeholder="Name" type="text" name="nome" id="nome">
+                                </div>
+                                <div class="col-2">
+                                    <label for="email">Email</label>
+                                    <input placeholder="Email" type="email" name="email" id="email">
+                                </div>
+                            </div>
 
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
+                            <label for="menssagem">Digite sua menssagem</label>
+                            <textarea placeholder="Mensagem" name="menssagem" id="menssagem"></textarea>
+        
+                            <input type="submit" value="Enviar" class="btn-default btn-default-stroke btn-default-big">
+                        </form>
+                    </div>
 
-                    <label for="menssagem">Digite sua menssagem</label>
-                    <textarea name="menssagem" id="menssagem"></textarea>
+                    <div class="col-1-3">
+                        <address>
+                            <p>
+                                <span> Endereço </span> Rua aristides Gomes correa
+                            </p>
+                            <p>
+                                <span> Telefone </span> 000-000-000
+                            </p>
+                            <p>
+                                <span> E-mail </span> Email@server.com
+                            </p>
+                        </address>
+                    </div>
+                </div>
 
-                    <input type="submit" value="Enviar">
-                </form>
-
-                <address>
-                    <p>
-                        <span>Endereço</span>Rua aristides Gomes correa
-                    </p>
-                    <p>
-                        <span>Telefone</span>000-000-000
-                    </p>
-                    <p>
-                        <span>E-mail</span>Email@server.com
-                    </p>
-                </address>
             </section>
 
             <section class="main-content-section">
@@ -108,11 +138,18 @@
                     This is <bold>bold</bold> and this is <strong>strong</strong>. This is 
                     <i>italic</i> and this is <em>emphasized</em>. This is 
                     <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is 
-                    <u>underlined</u> and this is <code>code: for (;;) { ... }</code>. Finally, this is <a href="#" >a link</a>.
+                    <u>underlined</u> and this is <code>code: for (;;) { ... }</code>. Finally, <a href="#" >this is a link</a>.
                 </p>
 
+                <h1>Titulo h1</h1>
+                <h2>Titulo h2</h2>
+                <h3>Titulo h3</h3>
+                <h4>Titulo h4</h4>
+                <h5>Titulo h5</h5>
+                <h6>Titulo h6</h6>
+
                 <blockquote cite="http://developer.mozila.org">
-                    <p>Esta é uma citação tirada da Mozilla Developer Center.</p>
+                    Esta é uma citação tirada da Mozilla Developer Center.
                 </blockquote>
 
                 <p>According to Mozilla's website,
@@ -134,48 +171,62 @@
 
                 <h4>Listas</h4>
 
-                <h5>Não ordenada</h5>
+                <div class="row">
+                    <div class="col-2">
+                        <h5>Não ordenada</h5>
                 
-                <ul>
-                    <li>item 1</li>
-                    <li>item 2</li>
-                    <li>item 3</li>
-                </ul>
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ul>
+        
+                        <h5>Ordenada</h5>
+                        
+                        <ol>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ol>
+                    </div>
 
-                <h5>Ordenada</h5>
+                    <div class="col-2">
+                        <h5>Alternada</h5>
                 
-                <ol>
-                    <li>item 1</li>
-                    <li>item 2</li>
-                    <li>item 3</li>
-                </ol>
+                        <ul class="ul-alternate">
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ul> 
+        
+                        <h5>Icons</h5>
+                        <ul class="ul-icons">
+                            <li><i class="fa-brands fa-linkedin"></i></li>
+                            <li><i class="fa-brands fa-github"></i></li>
+                        </ul>
+                    </div>
+                </div>
 
-                <h5>Alternada</h5>
-                
-                <ul class="ul-alternada">
-                    <li>item 1</li>
-                    <li>item 2</li>
-                    <li>item 3</li>
-                </ul> 
-
-                <h5>Icons</h5>
-                <ul>
-                    <li><i class="fa-brands fa-linkedin"></i></li>
-                    <li><i class="fa-brands fa-github"></i></li>
-                </ul>
 
                 <h5>Actions</h5>
-                <p> <a href="#" class="btn-default">Default</a>
-                    <a href="#" class="btn-default btn-default-stroke">Default</a>
-                </p>
-
-                <p> <a href="#" class="btn-default btn-default-small">Default</a>
-                    <a href="#" class="btn-default btn-default-small btn-default-stroke">Default</a>
-                </p>
-
-                <p> <a href="#" class="btn-default btn-default-full">Default</a>
-                    <a href="#" class="btn-default btn-default-full btn-default-stroke">Default</a>
-                </p>
+                <div class="row">
+                    <div class="col-2">
+                        <p> <a href="#" class="btn-default">Default</a>
+                            <a href="#" class="btn-default btn-default-stroke">Default</a>
+                        </p>
+        
+                        <p> <a href="#" class="btn-default btn-default-small">Default</a>
+                            <a href="#" class="btn-default btn-default-small btn-default-stroke">Default</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <p> <a href="#" class="btn-default btn-default-full">Default</a>
+                            <a href="#" class="btn-default btn-default-full btn-default-stroke">Default</a>
+                        </p>
+                    </div>
+                </div>
 
                 <h4>Table</h4>
                 <h5>Default</h5>
@@ -208,10 +259,13 @@
                         <tr>
                             <td>Item Three</td>
                             <td>Morbi faucibus arcu accumsan lorem.</td>
+                            <td>29.99</td>
+                        </tr>
+                        <tr>
+                            <td>Item Four</td>
+                            <td>Vitae integer tempus condimentum</td>
                             <td>19.99</td>
                         </tr>
-                        <tr>Item Four</tr>
-                        <td>Vitae integer tempus condimentum</td>
                         <tr>
                             <td>Item Five</td>
                             <td>Ante turpis integer aliquet porttitor.</td>
@@ -222,7 +276,7 @@
 
                 <h5>Alternate</h5>
 
-                <table class="table-alternate">
+                <table class="table table-alternate">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -250,10 +304,13 @@
                         <tr>
                             <td>Item Three</td>
                             <td>Morbi faucibus arcu accumsan lorem.</td>
+                            <td>29.99</td>
+                        </tr>
+                        <tr>
+                            <td>Item Four</td>
+                            <td>Vitae integer tempus condimentum</td>
                             <td>19.99</td>
                         </tr>
-                        <tr>Item Four</tr>
-                        <td>Vitae integer tempus condimentum</td>
                         <tr>
                             <td>Item Five</td>
                             <td>Ante turpis integer aliquet porttitor.</td>
@@ -300,8 +357,8 @@
 
                 <label for="msg">Mensagem:</label>
                 <textarea placeholder="Digite uma mensagem" id="msg"></textarea>
-                <input type="submit" class="btn-default" value="Enviar">
-                <input type="reset" class="btn-default-stroke" value="Limpar">
+                <input type="submit" class="btn-default btn-default-big" value="Enviar">
+                <input type="reset" class="btn-default btn-default-stroke btn-default-big" value="Limpar">
                 
             </section>
 
@@ -320,9 +377,9 @@
                     <img src="imagens/thumbs/04.jpg" alt="">
                     <img src="imagens/thumbs/05.jpg" alt="">
                     <img src="imagens/thumbs/06.jpg" alt="">
-                    <img src="imagens/thumbs/07.jpg" alt="">
-                    <img src="imagens/thumbs/08.jpg" alt="">
-                    <img src="imagens/thumbs/09.jpg" alt="">
+                    <img src="imagens/thumbs/03.jpg" alt="">
+                    <img src="imagens/thumbs/02.jpg" alt="">
+                    <img src="imagens/thumbs/01.jpg" alt="">
                 </div>
 
                 <h4>Left &amp; Right</h4>
